@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="651.0" style="-fx-background-color: #ff2b5c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodyorder.LoginController">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="138.0" prefHeight="337.0" prefWidth="314.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="108.0" layoutY="49.0" prefHeight="33.0" prefWidth="73.0" text="Login " textFill="#ff0d9b">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="emptxt" focusColor="#ff3377" labelFloat="true" layoutX="43.0" layoutY="114.0" prefHeight="25.0" prefWidth="202.0" promptText="User Id" unFocusColor="#d01336" />
+            <JFXPasswordField fx:id="passtxt" focusColor="#ff3377" labelFloat="true" layoutX="43.0" layoutY="195.0" prefHeight="25.0" prefWidth="202.0" promptText="Password" unFocusColor="#d01336" />
+            <JFXButton buttonType="RAISED" layoutX="83.0" layoutY="263.0" onAction="#Login" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5cd096;" text="Login" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="377.0" layoutY="177.0" prefHeight="38.0" prefWidth="250.0" text="Restaurant Login" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="26.0" prefHeight="38.0" prefWidth="150.0" text="Foody" textFill="#ffeea3">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="179.0" fitWidth="177.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/tacos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="418.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/utensils-clipart-head-chef-9.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" cancelButton="true" layoutX="577.0" layoutY="26.0" onAction="#exitScreen" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: #5cd096; -fx-background-radius: 150;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

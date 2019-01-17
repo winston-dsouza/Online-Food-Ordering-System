@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="600.0" style="-fx-background-color: #5D6D7E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foody.PaymentController">
+   <children>
+      <AnchorPane layoutX="51.0" layoutY="61.0" prefHeight="415.0" prefWidth="518.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="24.0" layoutY="150.0" prefHeight="186.0" prefWidth="380.0" style="-fx-background-color: #ABEBC6; -fx-background-radius: 22;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="321.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/debit%20card.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cardnumtxt" disable="true" layoutX="36.0" layoutY="26.0" prefHeight="25.0" prefWidth="190.0" promptText="   XXXX  XXXX XXXX XXXX" />
+                  <TextField fx:id="cardholdertxt" disable="true" layoutX="36.0" layoutY="75.0" promptText="Card Holder Name" />
+                  <Label layoutX="43.0" layoutY="6.0" prefHeight="17.0" prefWidth="77.0" text="Card number" textFill="#45943e" />
+                  <TextField fx:id="monthtxt" disable="true" layoutX="41.0" layoutY="124.0" prefHeight="25.0" prefWidth="45.0" promptText="MM" />
+                  <Label layoutX="94.0" layoutY="117.0" prefHeight="36.0" prefWidth="28.0" text="/">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="yeartxt" disable="true" layoutX="111.0" layoutY="124.0" prefHeight="25.0" prefWidth="38.0" promptText="YY" />
+                  <Label layoutX="41.0" layoutY="58.0" prefHeight="17.0" prefWidth="107.0" text="Card Holder Name" textFill="#45943e" />
+                  <Label layoutX="219.0" layoutY="58.0" prefHeight="17.0" prefWidth="28.0" text="CVV" textFill="#45943e" />
+                  <PasswordField fx:id="cvvtxt" disable="true" layoutX="220.0" layoutY="75.0" prefHeight="25.0" prefWidth="55.0" promptText="CVV" />
+                  <Label layoutX="41.0" layoutY="109.0" prefHeight="17.0" prefWidth="107.0" text=" Expiry Date" textFill="#45943e" />
+               </children>
+            </AnchorPane>
+            <JFXRadioButton fx:id="onlinepaybtn" layoutX="148.0" layoutY="115.0" onAction="#onlinePayment" prefHeight="17.0" prefWidth="208.0" text="Online Payment" textFill="#2e8623">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="payment" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <ImageView fitHeight="100.0" fitWidth="116.0" layoutX="24.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cod1.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="185.0" layoutY="348.0" onAction="#confirmPayment" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #fcc511;" text="Confirm" textFill="WHITE" />
+            <JFXRadioButton fx:id="codbtn" layoutX="148.0" layoutY="83.0" onAction="#cashOnDelivery" prefHeight="17.0" prefWidth="141.0" selected="true" text="Cash On Delivery" textFill="#2e8623" toggleGroup="$payment">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXRadioButton>
+            <Label fx:id="amounttxt" layoutX="388.0" layoutY="20.0" prefHeight="36.0" prefWidth="107.0" text="1234" textFill="#ee0c0c">
+               <font>
+                  <Font name="Microsoft YaHei" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="281.0" layoutY="19.0" prefHeight="39.0" prefWidth="107.0" text="Amount Rs." textFill="#252121">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="warning" layoutX="356.0" layoutY="361.0" prefHeight="17.0" prefWidth="126.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="237.0" layoutY="24.0" prefHeight="36.0" prefWidth="126.0" text="Payment" textFill="#fcc511">
+         <font>
+            <Font name="SansSerif Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/credit-card-pay-pal-icons.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="100.0" layoutX="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cod.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

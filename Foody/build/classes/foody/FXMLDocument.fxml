@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="649.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foody.FXMLDocumentController">
+   <children>
+      <Label layoutX="239.0" layoutY="27.0" prefHeight="17.0" prefWidth="133.0" text="Foody" textFill="#f85b00">
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="297.0" onAction="#signupScreen" prefHeight="35.0" prefWidth="204.0" style="-fx-background-color: #428bca;" text="SignUp" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="377.0" layoutY="297.0" onAction="#loginScreen" prefHeight="35.0" prefWidth="204.0" style="-fx-background-color: #428bca;" text="Login" textFill="WHITE" />
+      <Label layoutX="228.0" layoutY="87.0" opacity="0.7" prefHeight="35.0" prefWidth="194.0" text="Order Food Online" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Sans Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="270.0" prefHeight="17.0" prefWidth="158.0" text="Already registered ? Login">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="270.0" prefHeight="17.0" prefWidth="139.0" text="New User? SignUp">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="148.0" layoutX="239.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fast_food_397248.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="67.0" layoutX="365.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cupcake.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

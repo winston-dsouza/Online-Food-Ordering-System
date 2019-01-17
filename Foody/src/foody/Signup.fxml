@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="640.0" style="-fx-background-color: #566573;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foody.SignupController">
+   <children>
+      <AnchorPane layoutX="43.0" layoutY="73.0" prefHeight="462.0" prefWidth="556.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="textfname" focusColor="#f24541" labelFloat="true" layoutX="55.0" layoutY="100.0" prefHeight="25.0" prefWidth="206.0" promptText="First Name" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textlname" focusColor="#f24541" labelFloat="true" layoutX="321.0" layoutY="100.0" prefHeight="25.0" prefWidth="206.0" promptText="Last Name" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textemail" focusColor="#f24541" labelFloat="true" layoutX="55.0" layoutY="161.0" prefHeight="25.0" prefWidth="218.0" promptText="Email" unFocusColor="#f0ab41" />
+            <JFXPasswordField fx:id="textpass" focusColor="#f24541" labelFloat="true" layoutX="55.0" layoutY="217.0" prefHeight="25.0" prefWidth="206.0" promptText="Password" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textnumber" focusColor="#f24541" labelFloat="true" layoutX="321.0" layoutY="161.0" prefHeight="25.0" prefWidth="206.0" promptText="Mobile Number" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textstate" focusColor="#f24541" labelFloat="true" layoutX="55.0" layoutY="271.0" prefHeight="25.0" prefWidth="206.0" promptText="State" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textcity" focusColor="#f24541" labelFloat="true" layoutX="330.0" layoutY="271.0" prefHeight="25.0" prefWidth="206.0" promptText="City" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textland" focusColor="#f24541" labelFloat="true" layoutX="55.0" layoutY="330.0" prefHeight="25.0" prefWidth="218.0" promptText="Landmark" unFocusColor="#f0ab41" />
+            <JFXTextField fx:id="textpin" focusColor="#f24541" labelFloat="true" layoutX="330.0" layoutY="330.0" prefHeight="25.0" prefWidth="206.0" promptText="Pincode" unFocusColor="#f0ab41" />
+            <Label layoutX="218.0" layoutY="33.0" prefHeight="39.0" prefWidth="111.0" text="Sign Up " textFill="#f7a31e">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-36.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/burger.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="196.0" layoutY="404.0" onAction="#Signup" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #f4aa41;" text="Signup" textFill="WHITE" />
+            <Label fx:id="alertLabel" layoutX="196.0" layoutY="374.0" prefHeight="17.0" prefWidth="218.0" textFill="#f50909">
+               <font>
+                  <Font name="Microsoft YaHei" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="20.0" onAction="#exitScreen" style="-fx-background-color: #CCD1D1;" text="CLOSE" textFill="#ff0f0f" />
+   </children>
+</AnchorPane>

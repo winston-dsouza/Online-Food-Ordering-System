@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="836.0" style="-fx-background-color: #29c292;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodyorder.AdminPanelController">
+   <children>
+      <Label layoutX="394.0" layoutY="23.0" prefHeight="40.0" prefWidth="129.0" text="Admin" textFill="#fffdfd">
+         <font>
+            <Font name="SansSerif Bold" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="520.0" layoutY="331.0" onAction="#TakeOrderScreen" prefHeight="83.0" prefWidth="227.0" style="-fx-background-color: #f95539; -fx-background-radius: 34;" text="VIew Orders" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="17.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="46.0" layoutY="83.0" prefHeight="438.0" prefWidth="413.0" style="-fx-background-color: white; -fx-background-radius: 89;">
+         <children>
+            <JFXTextField fx:id="lastNametxt" focusColor="#ffc656" labelFloat="true" layoutX="86.0" layoutY="194.0" prefHeight="25.0" prefWidth="213.0" promptText="Last Name" />
+            <JFXTextField fx:id="firstNametxt" focusColor="#ffc656" labelFloat="true" layoutX="86.0" layoutY="131.0" prefHeight="25.0" prefWidth="213.0" promptText="First Name" />
+            <JFXPasswordField fx:id="passtxt" focusColor="#ffc656" labelFloat="true" layoutX="86.0" layoutY="266.0" prefHeight="25.0" prefWidth="213.0" promptText="Password" />
+            <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="351.0" onAction="#AddEmployee" prefHeight="38.0" prefWidth="273.0" style="-fx-background-color: #f95539;" text="ADD EMPLOYEE" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="109.0" layoutY="37.0" prefHeight="54.0" prefWidth="196.0" text="ADD EMPLOYEE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" cancelButton="true" layoutX="747.0" layoutY="25.0" onAction="#exitScreen" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: red; -fx-background-radius: 150;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="573.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_325788.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="627.0" style="-fx-background-color: #566573;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foody.LoginController">
+   <children>
+      <AnchorPane layoutX="27.0" layoutY="26.0" prefHeight="358.0" prefWidth="293.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="textemail" focusColor="#f24541" labelFloat="true" layoutX="30.0" layoutY="133.0" prefHeight="25.0" prefWidth="232.0" promptText="Enter Email" unFocusColor="#f0ab41" />
+            <JFXPasswordField fx:id="textpass" focusColor="#f24541" labelFloat="true" layoutX="30.0" layoutY="212.0" prefHeight="25.0" prefWidth="232.0" promptText="Enter Password" unFocusColor="#f4aa41" />
+            <JFXButton buttonType="RAISED" layoutX="81.0" layoutY="286.0" onAction="#Login" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #f4aa41;" text="Login" textFill="WHITE" />
+            <Label layoutX="65.0" layoutY="41.0" prefHeight="33.0" prefWidth="164.0" text="Login to Foody" textFill="#ffb108">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="alertLabel" layoutX="118.0" layoutY="91.0" prefHeight="17.0" prefWidth="102.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="566.0" layoutY="14.0" onAction="#exitScreen" style="-fx-background-color: #CCD1D1;" text="CLOSE" textFill="#ff0f0f" />
+      <ImageView fitHeight="185.0" fitWidth="239.0" layoutX="358.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clipart46971465.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="912.0" style="-fx-background-color: #29c292;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodyorder.TakeOrderController">
+   <children>
+      <Label layoutX="393.0" layoutY="40.0" prefHeight="25.0" prefWidth="141.0" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="30.0" layoutY="96.0" minWidth="-Infinity" prefHeight="398.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="ordernoCol" prefWidth="87.0" sortable="false" text="Order Number" />
+          <TableColumn fx:id="custCol" prefWidth="84.0" sortable="false" text="Customer ID" />
+            <TableColumn fx:id="menuCol" prefWidth="101.0" sortable="false" text="Item Name" />
+            <TableColumn fx:id="QuantityCol" prefWidth="59.0" text="Quantity" />
+            <TableColumn fx:id="deliveryCol" prefWidth="157.0" sortable="false" text="Delivery Type" />
+            <TableColumn fx:id="addressCol" maxWidth="495.0" prefWidth="452.0" sortable="false" text="Phone Number And Address" />
+        </columns>
+        
+      </TableView>
+      <JFXButton fx:id="logout" buttonType="RAISED" layoutX="812.0" layoutY="15.0" onAction="#exitScreen" style="-fx-background-color: #ff2b5c;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="355.0" layoutY="532.0" onAction="#DeliverItem" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: #f95539; -fx-background-radius: 23;" text="DELIVER ORDER" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Book" size="18.0" />
+         </font>
+      </JFXButton>
+      
+   </children>
+</AnchorPane>

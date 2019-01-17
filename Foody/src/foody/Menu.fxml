@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foody.MenuController">
+   <tabs>
+      <Tab text="Menu">
+        <content>
+            <ScrollPane>
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="935.0" style="-fx-background-color: white;">
+                     <children>
+                        <SplitPane layoutX="47.0" layoutY="39.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pizza1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="27.0" layoutY="139.0" prefHeight="30.0" prefWidth="146.0" text="American Pizza">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="71.0" text="Price:Rs.350" />
+                                    <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu1" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                        <SplitPane layoutX="275.0" layoutY="39.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pizza2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="51.0" layoutY="139.0" prefHeight="30.0" prefWidth="91.0" text="Veg Pizza">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="63.0" text="Price:Rs.250" />
+                                    <JFXButton fx:id="btn2" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu2" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="486.0" layoutY="39.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pizza3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="27.0" layoutY="139.0" prefHeight="30.0" prefWidth="135.0" text="Chicken Pizza">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="78.0" text="Price:Rs.400" />
+                                    <JFXButton fx:id="btn3" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu3" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="709.0" layoutY="39.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pizza4.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="18.0" layoutY="139.0" prefHeight="30.0" prefWidth="164.0" text="Pepperroni Pizza">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="70.0" text="Price:Rs.450" />
+                                    <JFXButton fx:id="btn4" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu4" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="47.0" layoutY="306.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/burger1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="40.0" layoutY="139.0" prefHeight="30.0" prefWidth="109.0" text="Veg Burger">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="65.0" layoutY="169.0" prefHeight="17.0" prefWidth="71.0" text="Price:Rs.50" />
+                                    <JFXButton fx:id="btn5" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu5" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="275.0" layoutY="306.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/burger2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="27.0" layoutY="139.0" prefHeight="30.0" prefWidth="147.0" text="Chicken Burger">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="63.0" text="Price:Rs.80" />
+                                    <JFXButton fx:id="btn6" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu6" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="503.0" layoutY="306.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/burger4.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="33.0" layoutY="139.0" prefHeight="30.0" prefWidth="135.0" text="Power Burger">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="63.0" text="Price:Rs.300" />
+                                    <JFXButton fx:id="btn7" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu7" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="719.0" layoutY="306.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/burger3.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="18.0" layoutY="139.0" prefHeight="30.0" prefWidth="163.0" text="Sandwich Burger">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="70.0" text="Price:Rs.180" />
+                                    <JFXButton fx:id="btn8" buttonType="RAISED" layoutX="51.0" layoutY="195.0" onAction="#Menu8" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="55.0" layoutY="586.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/indian-sweet.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="27.0" layoutY="139.0" prefHeight="30.0" prefWidth="123.0" text="Gulab Jamun">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="83.0" text="Price :Rs.200" />
+                                    <JFXButton fx:id="btn9" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu9" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="719.0" layoutY="586.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/waffle.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="24.0" layoutY="139.0" prefHeight="30.0" prefWidth="158.0" text="Belgium Waffle">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="76.0" text="Price : Rs.150" />
+                                    <JFXButton fx:id="btn12" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu12" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="503.0" layoutY="586.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/chocolate.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="27.0" layoutY="139.0" prefHeight="30.0" prefWidth="145.0" text="Naugat Moose">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="71.0" text="Price :Rs.300" />
+                                    <JFXButton fx:id="btn11" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu11" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane layoutX="275.0" layoutY="586.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="191.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="189.0">
+                                 <children>
+                                    <ImageView fitHeight="147.0" fitWidth="200.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/naugatmoose.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="9.0" layoutY="139.0" prefHeight="30.0" prefWidth="163.0" text="Chocolate Moose">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="169.0" prefHeight="17.0" prefWidth="86.0" text="Price :Rs.250" />
+                                    <JFXButton fx:id="btn10" buttonType="RAISED" layoutX="55.0" layoutY="195.0" onAction="#Menu10" style="-fx-background-color: #5DADE2;" text="Add To Cart" textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <JFXButton buttonType="RAISED" layoutX="841.0" layoutY="2.0" onAction="#Logout" style="-fx-background-color: #aba7a7;" text="logout" textFill="WHITE" />
+                        <Label fx:id="custLabel" layoutX="62.0" layoutY="6.0" prefHeight="17.0" prefWidth="64.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+        </content>
+      </Tab>
+      <Tab text="Cart">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table" editable="true" layoutX="148.0" layoutY="93.0" prefHeight="414.0" prefWidth="625.0" style="-fx-border-color: #5DADE2;">
+                    <columns>
+                      <TableColumn id="MenuIdCol" fx:id="MenuIdCol" prefWidth="124.0" text="Menu Id" />
+                      <TableColumn id="MenuNameCol" fx:id="MenuNameCol" prefWidth="110.0" text="Menu Name" />
+                        <TableColumn id="PriceCol" fx:id="PriceCol" prefWidth="109.0" text="Price" />
+                        <TableColumn id="QuantityCol" fx:id="QuantityCol" prefWidth="111.0" text="Quantity" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="341.0" layoutY="545.0" prefHeight="28.0" prefWidth="153.0" text="Total Amount :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="730.0" layoutY="545.0" onAction="#paymentScreen" prefHeight="30.0" prefWidth="152.0" ripplerFill="#19839e" style="-fx-background-color: #fcc511;" text="Confirm Order" textFill="WHITE" />
+                  <JFXButton buttonType="RAISED" layoutX="163.0" layoutY="545.0" onAction="#deleteItem" prefHeight="25.0" prefWidth="98.0" ripplerFill="#fcdfdf" style="-fx-background-color: #ff6647;" text="Delete" textFill="WHITE" />
+                  <Label fx:id="totalAmount" layoutX="494.0" layoutY="540.0" prefHeight="35.0" prefWidth="98.0" text="0" textFill="#f50f0f">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="461.0" layoutY="540.0" prefHeight="35.0" prefWidth="37.0" text="Rs." textFill="#f50f0f">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Settings">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="65.0" layoutY="111.0" prefHeight="430.0" prefWidth="355.0" style="-fx-background-color: #FCF3CF; -fx-background-radius: 22;">
+                     <children>
+                        <Label layoutX="94.0" layoutY="54.0" prefHeight="48.0" prefWidth="167.0" text="Change Password" textFill="#f39c12">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="oldpasstxt" layoutX="65.0" layoutY="153.0" prefHeight="25.0" prefWidth="226.0" promptText="Enter Old Password" />
+                        <PasswordField fx:id="newpasstxt" layoutX="64.0" layoutY="228.0" prefHeight="25.0" prefWidth="228.0" promptText="Enter New Password" />
+                        <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="320.0" onAction="#UpdatePassword" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #F39C12; -fx-background-radius: 33;" text="Change Password" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="492.0" layoutY="111.0" prefHeight="430.0" prefWidth="379.0" style="-fx-background-radius: 22; -fx-background-color: #D6EAF8;">
+                     <children>
+                        <Label layoutX="115.0" layoutY="40.0" prefHeight="48.0" prefWidth="152.0" text="Update Address" textFill="#f1948a">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="341.0" onAction="#putAddress" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #F1948A; -fx-background-radius: 33;" text="Update" textFill="WHITE" />
+                        <TextField fx:id="statetxt" layoutX="58.0" layoutY="121.0" prefHeight="25.0" prefWidth="221.0" promptText="state" />
+                        <TextField fx:id="citytxt" layoutX="57.0" layoutY="163.0" prefHeight="25.0" prefWidth="223.0" promptText="city" />
+                        <TextField fx:id="pincodetxt" layoutX="64.0" layoutY="281.0" prefHeight="27.0" prefWidth="188.0" promptText="Pincode" />
+                        <TextArea fx:id="landtxt" layoutX="58.0" layoutY="207.0" prefHeight="50.0" prefWidth="222.0" promptText="Landmark" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Orders">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table1" editable="true" layoutX="132.0" layoutY="94.0" prefHeight="436.0" prefWidth="657.0" style="-fx-border-color: #5DADE2;">
+                     <columns>
+                        <TableColumn id="MenuIdCol" fx:id="OrderidCol1" prefWidth="124.0" text="Order No" />
+                        <TableColumn id="MenuNameCol" fx:id="MenuNameCol1" prefWidth="110.0" text="Menu Name" />
+                        <TableColumn id="QuantityCol" fx:id="QuantityCol1" prefWidth="111.0" text="Quantity" />
+                        <TableColumn fx:id="OrderStatusCol1" prefWidth="75.0" text="Order status" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="358.0" layoutY="37.0" prefHeight="36.0" prefWidth="205.0" text="ORDER STATUS" textFill="#f01111">
+                     <font>
+                        <Font name="Microsoft JhengHei Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
