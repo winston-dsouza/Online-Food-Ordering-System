@@ -25,4 +25,4 @@
 5. Enter your server properties(**Host Name, Port Number, Admin UserName/Password**).
 
 *Note The [Foody](https://github.com/winston-dsouza/Online-Food-Ordering-System/tree/master/Foody) folder is Food Ordering App and 
-[FoodyOrder](https://github.com/winston-dsouza/Online-Food-Ordering-System/tree/master/FoodyOrder) folder is order retrieve*
+[FoodyOrder](https://github.com/winston-dsouza/Online-Food-Ordering-System/tree/master/FoodyOrder) folder is order retrieve App code*
