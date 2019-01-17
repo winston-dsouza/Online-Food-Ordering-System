@@ -23,3 +23,6 @@
 3. Download the project of the application and open it in **NetBeans**.
 4. Connect with the database in the Services tab under **MySQL Server(localhost)**. The MySQL **JDBC driver** is embedded in the project.
 5. Enter your server properties(**Host Name, Port Number, Admin UserName/Password**).
+
+*Note The [Foody](https://github.com/winston-dsouza/Online-Food-Ordering-System/tree/master/Foody) folder is Food Ordering App and 
+[FoodyOrder](https://github.com/winston-dsouza/Online-Food-Ordering-System/tree/master/FoodyOrder) folder is order retrieve*
