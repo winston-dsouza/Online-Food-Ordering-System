@@ -1,5 +1,5 @@
 # Online Food Ordering System
-> The *Online Food Ordering System*(Foody) is a desktop app. It has a food ordering app for a customer and a separate app for order retrieval system for Restaurant.
+The *Online Food Ordering System*(Foody) is a desktop app. It has a food ordering app for a customer and a separate app for order retrieval system for Restaurant.
 
 ## Features
 - Authentication system guarding the app core.
@@ -7,6 +7,8 @@
 - Customers can update password and can change the delivery address.
 - Data stored in a MySQL database
 - Friendly user interface with JavaFX
+
+For screenshots [click here](https://winston-dsouza.github.io/#projects)
 
 ## Technologies
 - [Java](https://go.java/index.html) - widely used object-oriented language, the core of our system
