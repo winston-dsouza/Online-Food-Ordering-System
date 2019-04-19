@@ -12,8 +12,6 @@ For screenshots [click here](https://winston-dsouza.github.io/#projects)
 
 ![login](https://github.com/winston-dsouza/winston-dsouza.github.io/blob/master/images/Login.png)
 ![menupage](https://github.com/winston-dsouza/winston-dsouza.github.io/blob/master/images/cart.png)
-![adminlogin](https://github.com/winston-dsouza/winston-dsouza.github.io/blob/master/images/res.png)
-
 
 ## Technologies
 - [Java](https://go.java/index.html) - widely used object-oriented language, the core of our system
