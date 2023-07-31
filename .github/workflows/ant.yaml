@@ -13,5 +13,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Build with Ant
-        run: ant -noinput -buildfile build.xml
+      - name: Build with Ant Foody
+        run: ant -noinput -buildfile Foody/build.xml
+      - name: Build with Ant FoodyOrder
+        run: ant -noinput -buildfile Foody/build.xml
