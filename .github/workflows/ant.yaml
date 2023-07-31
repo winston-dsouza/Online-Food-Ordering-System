@@ -14,7 +14,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Download thirdparty jar
-        run: mkdir -p thirdparty;wget https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.7/jfoenix-8.0.7.jar -O thirdparty/jfoenix-8.0.7.jar 
+        run: mkdir -p thirdparty;wget https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.7/jfoenix-8.0.7.jar -O thirdparty/jfoenix-8.0.7.jar; wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar -O thirdparty/mysql-connector-java-8.0.33.jar 
       - name: Build with Ant Foody
         run: ant -noinput -buildfile Foody/build.xml
       - name: Build with Ant FoodyOrder
